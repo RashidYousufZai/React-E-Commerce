@@ -91,7 +91,8 @@ ${"" /* resuable code section  */}
 
 .grid {
   display: flex;
-  // gap: 9rem;
+  justify-content : center;
+  gap: 9rem;
 }
 
 .grid-two-column {
