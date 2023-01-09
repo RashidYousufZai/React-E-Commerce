@@ -169,8 +169,7 @@ const Nav = () => {
             <NavLink
               to="/"
               className="navbar-link "
-              onClick={() => setMenuIcon(false)}
-            >
+              onClick={() => setMenuIcon(false)}>
               Home
             </NavLink>
           </li>
@@ -178,8 +177,7 @@ const Nav = () => {
             <NavLink
               to="/about"
               className="navbar-link "
-              onClick={() => setMenuIcon(false)}
-            >
+              onClick={() => setMenuIcon(false)}>
               About
             </NavLink>
           </li>
@@ -187,8 +185,7 @@ const Nav = () => {
             <NavLink
               to="/products"
               className="navbar-link "
-              onClick={() => setMenuIcon(false)}
-            >
+              onClick={() => setMenuIcon(false)}>
               Products
             </NavLink>
           </li>
@@ -196,18 +193,8 @@ const Nav = () => {
             <NavLink
               to="/contact"
               className="navbar-link "
-              onClick={() => setMenuIcon(false)}
-            >
+              onClick={() => setMenuIcon(false)}>
               Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/shopping"
-              className="navbar-link "
-              onClick={() => setMenuIcon(false)}
-            >
-              Shopping
             </NavLink>
           </li>
           <li>
@@ -218,6 +205,7 @@ const Nav = () => {
           </li>
         </ul>
 
+        {/* two button for open and close of menu */}
         <div className="mobile-navbar-btn">
           <CgMenu
             name="menu-outline"

@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { GlobalStyle } from "../GlobalStyle";
 import { Button } from "../styles/Button";
 
 const HeroSection = ({ myData }) => {
@@ -18,7 +17,7 @@ const HeroSection = ({ myData }) => {
               atque temporibus veniam doloribus libero ad error omnis voluptates
               animi! Suscipit sapiente.
             </p>
-            <NavLink to={'/shopping'}>
+            <NavLink>
               <Button>show now</Button>
             </NavLink>
           </div>
