@@ -1,5 +1,5 @@
 # Welcome to React Ecommerce Webstie
-# wEBSITE LINK 
+# WEBSITE LINK 
 ## https://ryz-e-commerce.netlify.app/
 
 ## Follow the 3 Steps and your good to go. 
