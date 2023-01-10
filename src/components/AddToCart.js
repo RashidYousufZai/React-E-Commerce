@@ -4,6 +4,7 @@ import { FaCheck } from "react-icons/fa";
 // import CartAmountToggle from "./CartAmountToggle";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
+import CartAmountToggle from "./CartAmountToggle";
 
 const AddToCart = ({ product }) => {
   const { id, colors, stock } = product;
@@ -30,7 +31,8 @@ const AddToCart = ({ product }) => {
                 key={index}
                 style={{ backgroundColor: curColor }}
                 className={color === curColor ? "btnStyle active" : "btnStyle"}
-                onClick={() => setColor(curColor)}>
+                onClick={() => setColor(curColor)}
+              >
                 {color === curColor ? <FaCheck className="checkStyle" /> : null}
               </button>
             );
@@ -39,11 +41,11 @@ const AddToCart = ({ product }) => {
       </div>
 
       {/* add to cart  */}
-      {/* <CartAmountToggle
+      <CartAmountToggle
         amount={amount}
         setDecrease={setDecrease}
         setIncrease={setIncrease}
-      /> */}
+      />
 
       <NavLink to="/cart">
         <Button className="btn">Add To Cart</Button>
