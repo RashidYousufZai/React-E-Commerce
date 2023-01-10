@@ -79,6 +79,9 @@ const Wrapper = styled.section`
   .active {
     opacity: 1;
   }
+  Wrapper Navlink .btn {
+    margin-top: "5px";
+  }
 
   .checkStyle {
     font-size: 1rem;
