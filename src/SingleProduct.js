@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import { useProductContext } from "./context/productcontex";
 import PageNavigation from "./components/PageNavigation";
-// import MyImage from "./components/MyImage";
+import MyImages from "./components/MyImages";
 import { Container } from "./styles/Container";
 import FormatPrice from "./Helpers/FormatPrice";
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import MyImages from "./components/MyImages";
+import Star from "./components/Star";
+import AddToCart from "./components/AddToCart";
 
 const API = "https://api.pujakaitem.com/api/products";
 
@@ -52,8 +53,8 @@ const SingleProduct = () => {
           {/* product dAta  */}
           <div className="product-data">
             <h2>{name}</h2>
-            <p>{stars}</p>
-            <p>{reviews} reviews</p>
+            <Star stars={stars} reviews={reviews} />
+
             <p className="product-data-price">
               MRP:
               <del>
@@ -98,6 +99,8 @@ const SingleProduct = () => {
                 Brand :<span> {company} </span>
               </p>
             </div>
+            <hr />
+            {stock > 0 && <AddToCart product={singleProduct} />}
           </div>
         </div>
       </Container>
