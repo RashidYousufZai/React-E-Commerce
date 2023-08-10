@@ -1,6 +1,6 @@
 # Welcome to React Ecommerce Webstie
 # WEBSITE LINK 
-## https://ryz-e-commerce.netlify.app/
+## [https://ryz-e-commerce.netlify.app/](https://rashidkhanproject1.netlify.app/)
 
 ## Follow the 3 Steps and your good to go. 
 
